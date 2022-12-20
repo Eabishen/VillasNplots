@@ -232,9 +232,6 @@ body {
     width: max-content;
 }
 
-.plotsvillascontainer .topImage {
-}
-
 .plotsvillascontainer .topImage img {
     object-fit: cover;
     width: 150%;
@@ -321,5 +318,32 @@ body {
 @media (max-width: 500px) {
     .villaswrapper {
         padding: var(--spacing-md) 10px;
+    }
+    .inputbox {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        border-radius: var(--border-sm);
+        flex-direction: column;
+    }
+
+    .landingsearchbtn {
+        flex: 1;
+        width: 100%;
+    }
+
+    .landingpageConatiner {
+        height: auto;
+        padding-block: var(--spacing-sm);
+        padding-block-end: var(--spacing-md);
+        border-radius: 2px;
+    }
+
+    .topicheading {
+        font-size: 22px;
+    }
+
+    #featuredvillas {
+        padding: var(--spacing-sm);
     }
 }
