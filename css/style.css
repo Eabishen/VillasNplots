@@ -317,3 +317,9 @@ body {
     font-size: 14px;
     font-weight: 600;
 }
+
+@media (max-width: 500px) {
+    .villaswrapper {
+        padding: var(--spacing-md) 10px;
+    }
+}
