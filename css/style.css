@@ -322,9 +322,18 @@ body {
     .inputbox {
         display: flex;
         align-items: center;
-        gap: var(--spacing-xs);
+        gap: 05px;
         border-radius: var(--border-sm);
         flex-direction: column;
+        padding: 10px 05px;
+    }
+
+    .inputbox input {
+        font-size: 14px;
+    }
+
+    .fontsearch {
+        gap: 10px;
     }
 
     .landingsearchbtn {
