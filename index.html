@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script
+            defer
+            src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+        <title>VillasNPlots</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light shadowdrop-lg">
+            <div class="container-fluid navbarswrapper">
+                <a class="navbar-brand" href="#">
+                    <img src="assest/logosandmain/logo2.png" alt="" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Villas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-nav me-lg-2">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Saved Homes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Saved Searched</a>
+                        </li>
+                    </span>
+                    <button
+                        class="btn fw-bold navbarbutton btn-outline-dark me-4"
+                        type="button"
+                    >
+                        Sign up/Login in
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main class="villaswrapper">
+            <section id="home">
+                <div class="landingpageConatiner">
+                    <div class="ladingpageContent">
+                        <div class="ladningheadingtext">
+                            Discover a place <br />
+                            you'll love to live
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="price-toggler">
+                                <span id="month" class="monthly actives"
+                                    >Villas</span
+                                >
+                                <span id="year" class="Yearly">Plots</span>
+                            </div>
+                        </div>
+                        <div class="searchbar">
+                            <div class="inputbox">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input
+                                    type="text"
+                                    placeholder="Search for Plots,Area or Location"
+                                    aria-placeholder="Search for Plots,Area or Location"
+                                />
+                                <button
+                                    type="button"
+                                    class="btn landingsearchbtn"
+                                >
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="featuredvillas">
+                <div class="topicheading">Featured Villa Projects</div>
+                <div class="containers">
+                    <div class="cards">
+                        <div class="card-headers">
+                            <img
+                                src="https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlsbGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt="city"
+                            />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading">
+                                <h4>Sark Prime North Midows 2</h4>
+                                <p>₹2.90Cr</p>
+                            </div>
+                            <span>
+                                <p>In Lorem,Ipsum</p>
+                                <p>4 BHK Villa</p>
+                                <p>Marketed By : XYZ</p>
+                            </span>
+                            <div class="viewDetails">
+                                <a href=""
+                                    >View details
+                                    <i class="fa-solid fa-arrow-right"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers">
+                            <img
+                                src="https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dmlsbGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt="city"
+                            />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading">
+                                <h4>Sark Prime North Midows 2</h4>
+                                <p>₹2.90Cr</p>
+                            </div>
+                            <span>
+                                <p>In Lorem,Ipsum</p>
+                                <p>4 BHK Villa</p>
+                                <p>Marketed By : XYZ</p>
+                            </span>
+                            <div class="viewDetails">
+                                <a href=""
+                                    >View details
+                                    <i class="fa-solid fa-arrow-right"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers">
+                            <img
+                                src="https://media.istockphoto.com/id/1413054619/photo/3d-rendering-of-modern-house-with-wood-plank-facade-by-the-sea-or-ocean-on-sunset.jpg?b=1&s=170667a&w=0&k=20&c=fh_I86HuXaeVK5Uk_v0MDb_ZC0-X6X09E4Hq6SWluWo="
+                                alt="city"
+                            />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading">
+                                <h4>Sark Prime North Midows 2</h4>
+                                <p>₹2.90Cr</p>
+                            </div>
+                            <span>
+                                <p>In Lorem,Ipsum</p>
+                                <p>4 BHK Villa</p>
+                                <p>Marketed By : XYZ</p>
+                            </span>
+                            <div class="viewDetails">
+                                <a href=""
+                                    >View details
+                                    <i class="fa-solid fa-arrow-right"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="featuredvillas">
+                <div class="topicheading">Featured Plot Projects</div>
+                <div class="containers">
+                    <div class="cards">
+                        <div class="card-headers">
+                            <img
+                                src="https://images.unsplash.com/photo-1470123808288-1e59739dea12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsb3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="city"
+                            />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading">
+                                <h4>Sark Prime North Midows 2</h4>
+                                <p>₹2.90Cr</p>
+                            </div>
+                            <span>
+                                <p>In Lorem,Ipsum</p>
+                                <p>60 X 120 Plot</p>
+                                <p>Marketed By : XYZ</p>
+                            </span>
+                            <div class="viewDetails">
+                                <a href=""
+                                    >View details
+                                    <i class="fa-solid fa-arrow-right"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers">
+                            <img
+                                src="https://images.unsplash.com/photo-1573850107183-fc98954034a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBsb3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="city"
+                            />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading">
+                                <h4>Sark Prime North Midows 2</h4>
+                                <p>₹2.90Cr</p>
+                            </div>
+                            <span>
+                                <p>In Lorem,Ipsum</p>
+                                <p>60 X 120 Plot</p>
+                                <p>Marketed By : XYZ</p>
+                            </span>
+                            <div class="viewDetails">
+                                <a href=""
+                                    >View details
+                                    <i class="fa-solid fa-arrow-right"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers">
+                            <img
+                                src="https://images.unsplash.com/photo-1625878499209-b664c3e138fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBsb3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="city"
+                            />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading">
+                                <h4>Sark Prime North Midows 2</h4>
+                                <p>₹2.90Cr</p>
+                            </div>
+                            <span>
+                                <p>In Lorem,Ipsum</p>
+                                <p>60 X 120 Plot</p>
+                                <p>Marketed By : XYZ</p>
+                            </span>
+                            <div class="viewDetails">
+                                <a href=""
+                                    >View details
+                                    <i class="fa-solid fa-arrow-right"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="featuredvillas">
+                <div class="topicheading">How Villas N Plots can help?</div>
+                <div class="containers">
+                    <div class="cards">
+                        <div class="card-headers2">
+                            <img src="assest/plots/compass.png" alt="city" />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading2">
+                                <h4 class="h4not">Sark Prime North Midows 2</h4>
+                            </div>
+                            <span>
+                                <p>
+                                    Whether you’re a team of 2 or 2,000, Trello
+                                    can be customized for your organization.
+                                    Explore which option is best for you.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers2">
+                            <img src="assest/plots/Group.png" alt="city" />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading2">
+                                <h4 class="h4not">Sark Prime North Midows 2</h4>
+                            </div>
+                            <span>
+                                <p>
+                                    Whether you’re a team of 2 or 2,000, Trello
+                                    can be customized for your organization.
+                                    Explore which option is best for you.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers2">
+                            <img src="assest/plots/tag.png" alt="city" />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading2">
+                                <h4 class="h4not">Sark Prime North Midows 2</h4>
+                            </div>
+                            <span>
+                                <p>
+                                    Whether you’re a team of 2 or 2,000, Trello
+                                    can be customized for your organization.
+                                    Explore which option is best for you.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers2">
+                            <img src="assest/plots/compass.png" alt="city" />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading2">
+                                <h4 class="h4not">Sark Prime North Midows 2</h4>
+                            </div>
+                            <span>
+                                <p>
+                                    Whether you’re a team of 2 or 2,000, Trello
+                                    can be customized for your organization.
+                                    Explore which option is best for you.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers2">
+                            <img src="assest/plots/Group.png" alt="city" />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading2">
+                                <h4 class="h4not">Sark Prime North Midows 2</h4>
+                            </div>
+                            <span>
+                                <p>
+                                    Whether you’re a team of 2 or 2,000, Trello
+                                    can be customized for your organization.
+                                    Explore which option is best for you.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-headers2">
+                            <img src="assest/plots/tag.png" alt="city" />
+                        </div>
+                        <div class="card-bodys">
+                            <div class="cards-heading2">
+                                <h4 class="h4not">Sark Prime North Midows 2</h4>
+                            </div>
+                            <span>
+                                <p>
+                                    Whether you’re a team of 2 or 2,000, Trello
+                                    can be customized for your organization.
+                                    Explore which option is best for you.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
