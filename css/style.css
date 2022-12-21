@@ -595,10 +595,10 @@ body {
 }
 .explore a {
     text-decoration: none;
+    color: var(--primaryColor);
 }
 
 .explore a:hover {
-    color: var(--primaryColor);
 }
 .explore:hover {
     transform: translateY(-2px);
