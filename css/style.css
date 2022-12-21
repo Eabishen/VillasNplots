@@ -33,6 +33,14 @@
     box-sizing: border-box;
 }
 
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Inter", sans-serif;
 }
@@ -79,6 +87,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.landingpageConatiner2 {
+    background: url("../assest/logosandmain/bg-villas.png") no-repeat center;
+}
+
+.landingpageConatiner3 {
+    background: url("../assest/logosandmain/bg-plots.png") no-repeat center;
 }
 
 .landingpageConatiner::before {
@@ -169,7 +185,7 @@ body {
     background-color: var(--primaryColor);
     color: var(--light);
     transition: all 5 00ms;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     padding: 10px 8px;
@@ -180,7 +196,15 @@ body {
 .landingsearchbtn:hover {
     background-color: var(--primaryColor);
     color: var(--light);
-    opacity: 0.9;
+    opacity: 0.95;
+}
+.ctabtn {
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+.ctabtn .landingsearchbtn {
+    min-width: 200px;
 }
 
 /* Landing Page Ends*/
@@ -216,9 +240,19 @@ body {
 }
 
 /* Featured Villas */
-#featuredvillas {
+#featuredvillas,
+#featuredplots,
+#testimonial,
+#featuredwhyus,
+#plotssection {
     padding: var(--spacing-lg);
 }
+
+#testimonial {
+    background-color: rgba(252, 194, 234, 0.15);
+    padding-bottom: 10px;
+}
+
 .topicheading {
     text-align: center;
     font-size: var(--large-fonts);
@@ -315,6 +349,371 @@ body {
     font-weight: 600;
 }
 
+/* Testimonial */
+
+/* Test */
+.swiper {
+    width: 100%;
+    min-height: 310px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background-color: var(--white);
+    border-radius: var(--border-sm);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    padding: 20px 30px;
+    /* Center slide text vertically */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.starsgroup i {
+    color: rgb(224, 224, 12);
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+.opinion {
+    margin-block: 20px 40px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.userinfo {
+    display: flex;
+    gap: 10px;
+    margin-top: var(--spacing-md);
+    padding-bottom: var(--border-md);
+}
+
+.userinfo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.userinfo .usename {
+    font-size: 16px;
+    font-weight: 600;
+}
+.userinfo .userdesc {
+    font-size: 14px;
+}
+/* Testimonial Ends */
+
+/* Footer section STARTS */
+
+.footer ul {
+    padding-left: 0;
+}
+.containerz {
+    max-width: 1170px;
+    margin: auto;
+}
+.rowz {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    background-color: rgba(56, 181, 197, 0.15);
+    padding: 70px 0;
+}
+.footer_logo {
+    max-width: 8rem;
+    margin-bottom: 35px;
+    position: relative;
+}
+.footer_col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer_col h4 {
+    font-size: 18px;
+    color: var(--dark);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+}
+.footer_col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--light-primary);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer_col ul li {
+    list-style: none;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+.footer_col ul li:last-child {
+    margin-bottom: 0px;
+}
+.footer_col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer_col ul li a:hover {
+    color: var(--dark);
+    transform: translateY(-4px);
+    font-weight: 500;
+}
+.footer_col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer_col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.social_icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.social_icons li {
+    margin: 0px !important;
+}
+
+.footer_col .cust_padding {
+    /* padding: 8px 13px; */
+    font-size: 18px;
+    /* font-weight: 700; */
+    border-radius: 5px;
+    color: var(--light-grey);
+}
+
+/* Villas Styling */
+#villasprojects {
+    background-color: #dafef6;
+    padding-block: 2rem;
+}
+
+/* About Us */
+
+.aboutus-conatiner {
+    display: flex;
+    gap: 2rem;
+    margin-block: 2rem 5rem;
+}
+
+.aboutusreverse {
+    flex-direction: row-reverse;
+}
+
+.teamcontainer {
+    flex-direction: row-reverse;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.aboutus-image {
+    width: 100%;
+}
+
+.aboutus-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-sm);
+    object-fit: cover;
+    box-shadow: 0px 0px 25px rgb(56, 45, 112, 0.4);
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.aboutus-heading {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.aboutus-subheading {
+    font-size: 16px;
+    color: #616161;
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+}
+
+.villastags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: var(--spacing-xs);
+    color: var(--white);
+}
+
+.villastags .tags {
+    padding: 05px 8px;
+    background-color: var(--primaryColor);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: var(--border-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.explore {
+    margin-top: var(--spacing-md);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    transition: all 0.2s;
+}
+.explore a {
+    text-decoration: none;
+}
+
+.explore a:hover {
+    color: var(--primaryColor);
+}
+.explore:hover {
+    transform: translateY(-2px);
+}
+
+.cardgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    align-items: center;
+    place-content: center;
+    gap: 3rem;
+}
+
+.plotcard {
+    position: relative;
+    margin-bottom: var(--spacing-md);
+}
+
+.cardimage {
+    width: 100%;
+    text-align: center;
+}
+
+.cardimage img {
+    border-radius: var(--border-md);
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.plotinfo {
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: var(--border-sm);
+    position: absolute;
+    bottom: -40px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.09);
+}
+
+.plotinfo .plotheading {
+    font-weight: 700;
+}
+.plotpara {
+    color: #444444;
+    font-size: 12px;
+    max-width: 95%;
+}
+
+.plotfeature {
+    color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 05px;
+}
+
+.plotexplore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--primaryColor);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.plotexplore a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+}
+.plotviewmore {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+.plotviewmore a {
+    text-decoration: none;
+    padding: 05px 08px;
+    border: 2px solid var(--primaryColor);
+    border-radius: var(--border-sm);
+    color: var(--dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.plotviewmore a:hover {
+    background-color: var(--primaryColor);
+    color: var(--white);
+}
+
+/* Footer responsiveness */
+@media (max-width: 900px) {
+    .footer_col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .ctabtn {
+        margin-block: var(--spacing-md);
+    }
+    .cardgrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+/* Footer responsiveness */
+
+/* Footer section ENDS */
+
 @media (max-width: 500px) {
     .villaswrapper {
         padding: var(--spacing-md) 10px;
@@ -341,6 +740,11 @@ body {
         width: 100%;
     }
 
+    .ctabtn {
+        width: 90%;
+        margin: 20px auto;
+    }
+
     .landingpageConatiner {
         height: auto;
         padding-block: var(--spacing-sm);
@@ -352,7 +756,43 @@ body {
         font-size: 22px;
     }
 
-    #featuredvillas {
+    #featuredvillas,
+    #featuredplots,
+    #featuredwhyus,
+    #testimonial,
+    #plotssection {
         padding: var(--spacing-sm);
     }
+    .footer_col {
+        width: 100%;
+    }
+
+    .aboutus-conatiner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutus-heading {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .aboutus-subheading {
+        font-size: 16px;
+        color: #444444;
+    }
+    .aboutus-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .villastags .tags {
+        width: 80px;
+    }
+    .cardgrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
+
+/* Test */
